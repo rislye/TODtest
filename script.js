@@ -3,9 +3,12 @@ function getComputerChoice(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+
+
+
  function getHumanChoice() {
-    let lowerCaseChoice = prompt("rock, paper or scissors");
-    let humanChoice = lowerCaseChoice.toLowerCase();
+    let lowerChoice = prompt("rock, paper or scissors")
+    let humanChoice = lowerChoice.toLowerCase();
     if (humanChoice == "rock") {
         return 1;
     }
@@ -17,7 +20,7 @@ function getComputerChoice(min, max) {
     }
     else {
             console.log("Wrong input"); 
-            getHumanChoice(); 
+            humanChoice = lowerChoice.toLowerCase();
     }
  }
 
