@@ -4,8 +4,6 @@ function getComputerChoice(min, max) {
 }
 
 
-
-
  function getHumanChoice() {
     let lowerChoice = prompt("rock, paper or scissors")
     let humanChoice = lowerChoice.toLowerCase();
@@ -27,13 +25,16 @@ function getComputerChoice(min, max) {
     function playGame() {
     let humanScore = 0
     let computerScore = 0
-    
-        for (let i = 0; i < 5; i++) {
-            const humanChoice = getHumanChoice();
-            const computerChoice = getComputerChoice(1, 3);
-            playRound(humanChoice, computerChoice)
-        }
+
+    while ((humanScore < 3) && (computerScore < 3)) {
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice(1, 3);
+        playRound(humanChoice, computerChoice)
+    }
+
             function playRound(humanChoice, computerChoice) {
+                if (humanScore <=3)
+                
                 if (humanChoice == computerChoice) {
                     console.log("its a tie !")
                     console.log(humanScore, computerScore);
@@ -84,6 +85,8 @@ function getComputerChoice(min, max) {
 }
 
 
+
+
 function functionToExec() {
     playGame()
     }
@@ -110,7 +113,7 @@ function playRound(humanChoice, computerChoice) {
             computerScore++
             }
 }
-/*
+
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log("it's a tie !")
