@@ -4,9 +4,9 @@ function getComputerChoice(min, max) {
 }
 
  function getHumanChoice() {
-    let lowerCaseChoice = prompt("rocks, paper or scissors");
+    let lowerCaseChoice = prompt("rock, paper or scissors");
     let humanChoice = lowerCaseChoice.toLowerCase();
-    if (humanChoice == "rocks") {
+    if (humanChoice == "rock") {
         return 1;
     }
     else if (humanChoice == "paper") {
@@ -36,17 +36,17 @@ function getComputerChoice(min, max) {
                     console.log(humanScore, computerScore);
                 }
                 else if (humanChoice == 1 && computerChoice == 2) {
-                    console.log("rocks vs paper, computer win!")
+                    console.log("rock vs paper, computer win!")
                     computerScore++
                     console.log(humanScore, computerScore);
                 }
                 else if (humanChoice == 1 && computerChoice == 3) {
-                    console.log("rocks vs scissors, player win!")
+                    console.log("rock vs scissors, player win!")
                     humanScore++
                     console.log(humanScore, computerScore);
                 }
                 else if (humanChoice == 2 && computerChoice == 1) {
-                    console.log("paper vs rocks, player win!")
+                    console.log("paper vs rock, player win!")
                     humanScore++
                     console.log(humanScore, computerScore);
                 }
@@ -56,7 +56,7 @@ function getComputerChoice(min, max) {
                     console.log(humanScore, computerScore);
                 }
                 else if (humanChoice == 3 && computerChoice == 1) {
-                    console.log("scissors vs rocks, computer win!")
+                    console.log("scissors vs rock, computer win!")
                     computerScore++
                     console.log(humanScore, computerScore);
                 }
