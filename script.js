@@ -3,7 +3,6 @@ function getComputerChoice(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-
  function getHumanChoice() {
     let lowerChoice = prompt("rock, paper or scissors")
     let humanChoice = lowerChoice.toLowerCase();
@@ -17,8 +16,8 @@ function getComputerChoice(min, max) {
         return 3;
     }
     else {
-            console.log("Wrong input"); 
-            humanChoice = lowerChoice.toLowerCase();
+        console.log("Wrong input"); 
+        humanChoice = lowerChoice.toLowerCase();
     }
  }
 
@@ -31,45 +30,43 @@ function getComputerChoice(min, max) {
         const computerChoice = getComputerChoice(1, 3);
         playRound(humanChoice, computerChoice)
     }
-
-            function playRound(humanChoice, computerChoice) {
-                if (humanScore <=3)
+        function playRound(humanChoice, computerChoice) {
                 
-                if (humanChoice == computerChoice) {
-                    console.log("its a tie !")
-                    console.log(humanScore, computerScore);
-                }
-                else if (humanChoice == 1 && computerChoice == 2) {
-                    console.log("rock vs paper, computer win!")
-                    computerScore++
-                    console.log(humanScore, computerScore);
-                }
-                else if (humanChoice == 1 && computerChoice == 3) {
-                    console.log("rock vs scissors, player win!")
-                    humanScore++
-                    console.log(humanScore, computerScore);
-                }
-                else if (humanChoice == 2 && computerChoice == 1) {
-                    console.log("paper vs rock, player win!")
-                    humanScore++
-                    console.log(humanScore, computerScore);
-                }
-                else if (humanChoice == 2 && computerChoice == 3) {
-                    console.log("paper vs scissors, computer win!")
-                    computerScore++
-                    console.log(humanScore, computerScore);
-                }
-                else if (humanChoice == 3 && computerChoice == 1) {
-                    console.log("scissors vs rock, computer win!")
-                    computerScore++
-                    console.log(humanScore, computerScore);
-                }
-                else if (humanChoice == 3 && computerChoice == 2) {
-                 console.log("scissors vs paper, player win!")
-                    humanScore++
-                    console.log(humanScore, computerScore);
-                }
-                else;
+            if (humanChoice == computerChoice) {
+                console.log("its a tie !")
+                console.log(humanScore, computerScore);
+            }
+            else if (humanChoice == 1 && computerChoice == 2) {
+                console.log("rock vs paper, computer win!")
+                computerScore++
+                console.log(humanScore, computerScore);
+            }
+            else if (humanChoice == 1 && computerChoice == 3) {
+                console.log("rock vs scissors, player win!")
+                humanScore++
+                console.log(humanScore, computerScore);
+            }
+            else if (humanChoice == 2 && computerChoice == 1) {
+                console.log("paper vs rock, player win!")
+                humanScore++
+                console.log(humanScore, computerScore);
+            }
+            else if (humanChoice == 2 && computerChoice == 3) {
+                console.log("paper vs scissors, computer win!")
+                computerScore++
+                console.log(humanScore, computerScore);
+            }
+            else if (humanChoice == 3 && computerChoice == 1) {
+                console.log("scissors vs rock, computer win!")
+                computerScore++
+                console.log(humanScore, computerScore);
+            }
+            else if (humanChoice == 3 && computerChoice == 2) {
+                console.log("scissors vs paper, player win!")
+                humanScore++
+                console.log(humanScore, computerScore);
+            }
+            else;
             }
 
     if (humanScore > computerScore) {
@@ -84,16 +81,9 @@ function getComputerChoice(min, max) {
         
 }
 
-
-
-
 function functionToExec() {
     playGame()
     }
-
-
-
- 
 
 
 /*
