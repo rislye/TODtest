@@ -4,8 +4,8 @@ function getComputerChoice(min, max) {
 }
 
  function getHumanChoice() {
-    let lowerChoice = prompt("rock, paper or scissors")
-    let humanChoice = lowerChoice.toLowerCase();
+    let lowerCaseChoice = prompt("rock, paper or scissors");
+    let humanChoice = lowerCaseChoice.toLowerCase();
     if (humanChoice == "rock") {
         return 1;
     }
@@ -17,13 +17,13 @@ function getComputerChoice(min, max) {
     }
     else {
         console.log("Wrong input"); 
-        humanChoice = lowerChoice.toLowerCase();
+        humanChoice = lowerCaseChoice.toLowerCase();
     }
  }
 
     function playGame() {
-    let humanScore = 0
-    let computerScore = 0
+    let humanScore = 0;
+    let computerScore = 0;
 
     while ((humanScore < 3) && (computerScore < 3)) {
         const humanChoice = getHumanChoice();
@@ -70,19 +70,19 @@ function getComputerChoice(min, max) {
             }
 
     if (humanScore > computerScore) {
-        console.log("human wins!")
+        console.log("human wins!");
     }
     else if (computerScore > humanScore) {
-        console.log("computer wins !")
+        console.log("computer wins !");
     }
     else {
-        console.log("tie !")
+        console.log("tie !");
     }
         
 }
 
 function functionToExec() {
-    playGame()
+    playGame();
     }
 
 
