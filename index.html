@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-<div><button onclick="functionToExec()">Click me!</button> </div>
+<div id="containerButton">
+    <button id="rockBtn">Rock</button>
+    <button id="paperBtn">Paper</button>
+    <button id="scissorBtn">Scissor</button>
+</div>
+<div id="results">
+    <div id="humanResult"></div>
+    <div id="computerResult"></div>
+    <div id="output"></div>
+    <div id="end"></div>
+</div>
     
 </body>
 </html>
